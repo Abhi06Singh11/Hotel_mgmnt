@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <title>Hotel Management</title>
+  </head>
+
+  <body>
+    <!-- This Is NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold ms-3" href="./index.html">ZOYO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li> -->
+            <li class="nav-item mx-5">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search your Hotels"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </li>
+            <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+          </ul>
+        </div>
+        <div class="mx-4">
+          <a href="./hotels.html" class="text-decoration-none text-black"
+            >Hotels</a
+          >
+        </div>
+        <div class="mx-4">
+          <a href="./register.html" class="text-decoration-none text-black"
+            >Become a member</a
+          >
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary mx-5"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Log In
+        </button>
+
+        <!-- Login  Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Login to your Account
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group mt-3">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-check my-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Remember me</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <p class="my-1">
+                    Don't have an Account ?
+                    <a href="./register.html">Click here</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="top-categories bg-dark text-white p-3 d-flex">
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./top-offers.jpg"
+            style="height: 50px; border-radius: 50px; margin: 0px auto"
+            alt=""
+          />
+          <div>Top Offers</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Punjab</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Maharashtra</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Goa</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Tamil Nadu</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Uttar Pradesh</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Delhi</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>West Bengal</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Rajasthan</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Kerela</div>
+        </div>
+        <div
+          style="width: fit-content; cursor: pointer"
+          class="text-center mx-4"
+        >
+          <img
+            src="./maharashtra.jpg"
+            style="
+              height: 50px;
+              width: 50px;
+              border-radius: 50px;
+              margin: 0px auto;
+            "
+            alt=""
+          />
+          <div>Bihar</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="height: 500px">
+            <img src="./hotel-3.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block px-2"
+              style="background-color: #26262a8f"
+            >
+              <h5>Hotel Emporio Near Charbagh Railway Station</h5>
+              <p>
+                Situated conveniently in the centre of Lucknow, Hotel Emporio
+                Near Charbagh Railway Station is within 3.2 km of Gurudwara
+                Bangla Sahib and 3.4 km of Gurudwara Sis Ganj Sahib.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 500px">
+            <img src="./hotel-1.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block px-2"
+              style="background-color: #26262a8f"
+            >
+              <h5>Hotel Decent Suites - Lucknow Airport</h5>
+              <p>
+                Located in Lucknow, within 12 km of Bada Imambara and 13 km of
+                MG Road, Hotel Decent Suites - Delhi Airport provides
+                accommodation with a terrace and free WiFi and much more...
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" style="height: 500px">
+            <img src="./hotel-2.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block px-2"
+              style="background-color: #26262a8f"
+            >
+              <h5>Avatar Living @Safdarjung EnclaveOpens in new window</h5>
+              <p>
+                Located 5.6 km from Lodhi Gardens, Avatar Living @Safdarjung
+                Enclave provides accommodation with free WiFi and free private
+                parking.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Book Your Destination -->
+    <section style="background-image: url(./hotel-2.jpg)" class="py-5">
+      <div class="text-center fs-2 font-weight-bold py-4">Book your Hotel</div>
+      <form class="px-5">
+        <div class="form-group py-2 w-50">
+          <label for="place"><span class="text-dark">Destination</span></label>
+          <input type="text" class="form-control" id="place" />
+        </div>
+        <div class="row">
+          <div class="form-group py-2 w-25">
+            <label for="checkin"><span class="text-dark">Check In</span></label>
+            <input type="date" class="form-control" id="checkin" />
+          </div>
+          <div class="form-group py-2 w-25">
+            <label for="checkout"
+              ><span class="text-dark">Check out</span></label
+            >
+            <input type="date" class="form-control" id="checkout" />
+          </div>
+        </div>
+        <div class="py-2">
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Room No.
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">302</a></li>
+              <li><a class="dropdown-item" href="#">304</a></li>
+              <li><a class="dropdown-item" href="#">306</a></li>
+              <li><a class="dropdown-item" href="#">308</a></li>
+              <li><a class="dropdown-item" href="#">310</a></li>
+              <li><a class="dropdown-item" href="#">312</a></li>
+              <li><a class="dropdown-item" href="#">314</a></li>
+              <li><a class="dropdown-item" href="#">316</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="py-2">
+          <button type="button" class="btn btn-primary">SEARCH</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Hotels -->
+    <section>
+      <div id="#hotels" class="text-center fs-2 font-weight-bold my-4">
+        Popular Hotels
+      </div>
+      <!-- Hotel Cards -->
+      <div class="hotel-cards d-flex justify-content-around">
+        <div class="card m-2" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./pop-hotel-1.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">FabHotel Aurelia Grand</h5>
+            <p class="card-text">
+              FabHotel Aurelia Grand is located in Lucknow, 14.2 km from Lucknow
+              University and 5 km from Indira Gandhi Pratishthan.
+            </p>
+            <a href="./hotel-details.html" class="btn btn-primary">View Now</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./pop-hotel-2.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Fairfield by Marriott Lucknow</h5>
+            <p class="card-text">
+              Located in the city's business hub, Fairfield by Marriott Lucknow
+              is located in Lucknow.Tunday Kababi is 6.8 mi from the property.
+            </p>
+            <a href="./hotel-details.html" class="btn btn-primary">View Now</a>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="./pop-hotel-3.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Country Inn & Suites By Migrolino</h5>
+            <p class="card-text">
+              Located in Lucknow and with Lucknow University, Country Inn &
+              Suites By Migrolino provides concierge services, a garden.
+            </p>
+            <a href="./hotel-details.html" class="btn btn-primary">View Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </body>
+</html>
